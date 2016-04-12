@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBEA85BC1CBD5214001081D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA85BB1CBD5214001081D3 /* AppDelegate.m */; };
+		FBEA85BF1CBD5215001081D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA85BE1CBD5215001081D3 /* main.m */; };
+		FBEA85C21CBD5215001081D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA85C11CBD5215001081D3 /* ViewController.m */; };
+		FBEA85C41CBD5215001081D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBEA85C31CBD5215001081D3 /* Assets.xcassets */; };
+		FBEA85C71CBD5215001081D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEA85C51CBD5215001081D3 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FBEA85B71CBD5214001081D3 /* GithubAutomation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubAutomation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBEA85BA1CBD5214001081D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBEA85BB1CBD5214001081D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBEA85BE1CBD5215001081D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBEA85C01CBD5215001081D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBEA85C11CBD5215001081D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FBEA85C31CBD5215001081D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBEA85C61CBD5215001081D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBEA85C81CBD5215001081D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBEA85B41CBD5214001081D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBEA85AE1CBD5214001081D3 = {
+			isa = PBXGroup;
+			children = (
+				FBEA85B91CBD5214001081D3 /* GithubAutomation */,
+				FBEA85B81CBD5214001081D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBEA85B81CBD5214001081D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBEA85B71CBD5214001081D3 /* GithubAutomation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBEA85B91CBD5214001081D3 /* GithubAutomation */ = {
+			isa = PBXGroup;
+			children = (
+				FBEA85BA1CBD5214001081D3 /* AppDelegate.h */,
+				FBEA85BB1CBD5214001081D3 /* AppDelegate.m */,
+				FBEA85C01CBD5215001081D3 /* ViewController.h */,
+				FBEA85C11CBD5215001081D3 /* ViewController.m */,
+				FBEA85C31CBD5215001081D3 /* Assets.xcassets */,
+				FBEA85C51CBD5215001081D3 /* Main.storyboard */,
+				FBEA85C81CBD5215001081D3 /* Info.plist */,
+				FBEA85BD1CBD5215001081D3 /* Supporting Files */,
+			);
+			path = GithubAutomation;
+			sourceTree = "<group>";
+		};
+		FBEA85BD1CBD5215001081D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBEA85BE1CBD5215001081D3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBEA85B61CBD5214001081D3 /* GithubAutomation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBEA85CB1CBD5215001081D3 /* Build configuration list for PBXNativeTarget "GithubAutomation" */;
+			buildPhases = (
+				FBEA85B31CBD5214001081D3 /* Sources */,
+				FBEA85B41CBD5214001081D3 /* Frameworks */,
+				FBEA85B51CBD5214001081D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GithubAutomation;
+			productName = GithubAutomation;
+			productReference = FBEA85B71CBD5214001081D3 /* GithubAutomation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBEA85AF1CBD5214001081D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Jeppesen;
+				TargetAttributes = {
+					FBEA85B61CBD5214001081D3 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = FBEA85B21CBD5214001081D3 /* Build configuration list for PBXProject "GithubAutomation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBEA85AE1CBD5214001081D3;
+			productRefGroup = FBEA85B81CBD5214001081D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBEA85B61CBD5214001081D3 /* GithubAutomation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBEA85B51CBD5214001081D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBEA85C41CBD5215001081D3 /* Assets.xcassets in Resources */,
+				FBEA85C71CBD5215001081D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBEA85B31CBD5214001081D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBEA85C21CBD5215001081D3 /* ViewController.m in Sources */,
+				FBEA85BF1CBD5215001081D3 /* main.m in Sources */,
+				FBEA85BC1CBD5214001081D3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBEA85C51CBD5215001081D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBEA85C61CBD5215001081D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBEA85C91CBD5215001081D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FBEA85CA1CBD5215001081D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FBEA85CC1CBD5215001081D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GithubAutomation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.px.GithubAutomation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBEA85CD1CBD5215001081D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GithubAutomation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.px.GithubAutomation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBEA85B21CBD5214001081D3 /* Build configuration list for PBXProject "GithubAutomation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBEA85C91CBD5215001081D3 /* Debug */,
+				FBEA85CA1CBD5215001081D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBEA85CB1CBD5215001081D3 /* Build configuration list for PBXNativeTarget "GithubAutomation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBEA85CC1CBD5215001081D3 /* Debug */,
+				FBEA85CD1CBD5215001081D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBEA85AF1CBD5214001081D3 /* Project object */;
+}
