@@ -9,8 +9,12 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ViewController : NSViewController
+@property BOOL isRun;
 @property (strong) IBOutlet NSTextView *txtVOutput;
+@property (strong) IBOutlet NSTextField *tfImagePath;
+@property (strong) IBOutlet NSButton *btnStart;
 
+- (IBAction)startBtnPressed:(id)sender;
 
 @end
 

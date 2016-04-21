@@ -651,7 +651,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Github Automation" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES"/>
                         <rect key="contentRect" x="620" y="299" width="480" height="270"/>
@@ -674,17 +674,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDO-o3-nDn">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="237"/>
                                 <clipView key="contentView" id="i99-N5-Wiw">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="237"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="7x5-BS-k2v">
-                                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="480" height="237"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" red="0.62565890766883681" green="0.93211137820512824" blue="0.34763874190505628" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="backgroundColor" red="0.14876051682692312" green="0.14804186698717955" blue="0.14947916666666672" alpha="1" colorSpace="calibratedRGB"/>
-                                            <size key="minSize" width="480" height="270"/>
+                                            <size key="minSize" width="480" height="237"/>
                                             <size key="maxSize" width="480" height="10000000"/>
                                             <attributedString key="textStorage">
                                                 <fragment content="Github Automation ">
@@ -705,7 +705,7 @@
                                                 </fragment>
                                             </attributedString>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="480" height="270"/>
+                                            <size key="minSize" width="480" height="237"/>
                                             <size key="maxSize" width="480" height="10000000"/>
                                         </textView>
                                     </subviews>
@@ -716,25 +716,71 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="a7s-Wx-TP4">
-                                    <rect key="frame" x="464" y="0.0" width="16" height="270"/>
+                                    <rect key="frame" x="464" y="0.0" width="16" height="237"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7ts-On-kac">
+                                <rect key="frame" x="7" y="245" width="107" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="O5G-Dd-L4k"/>
+                                    <constraint firstAttribute="height" constant="17" id="v3L-ms-tmJ"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Images Location:" id="w6O-Uy-XpT">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lOc-Wo-Ds8">
+                                <rect key="frame" x="120" y="243" width="294" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="882-6d-scP"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="/Users/Document/hulk-image-processing" drawsBackground="YES" id="wRe-28-l52">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="R36-oF-cSY">
+                                <rect key="frame" x="416" y="237" width="64" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="56F-Kg-Rie"/>
+                                    <constraint firstAttribute="width" constant="52" id="9HW-N1-1Wb"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cCa-UU-8Oh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="startBtnPressed:" target="XfG-lQ-9wD" id="Wmb-kQ-VPS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="uDO-o3-nDn" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="5a3-lz-vVP"/>
-                            <constraint firstItem="uDO-o3-nDn" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="Byy-9W-d0t"/>
+                            <constraint firstItem="uDO-o3-nDn" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="33" id="Byy-9W-d0t"/>
                             <constraint firstAttribute="bottom" secondItem="uDO-o3-nDn" secondAttribute="bottom" id="Krv-tm-Not"/>
+                            <constraint firstItem="lOc-Wo-Ds8" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="5" id="LrR-XK-JFy"/>
+                            <constraint firstAttribute="trailing" secondItem="R36-oF-cSY" secondAttribute="trailing" constant="6" id="P4Y-CY-puG"/>
                             <constraint firstAttribute="trailing" secondItem="uDO-o3-nDn" secondAttribute="trailing" id="Swb-4I-frT"/>
+                            <constraint firstItem="7ts-On-kac" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="9" id="XpK-Xm-aif"/>
+                            <constraint firstItem="R36-oF-cSY" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="8" id="b2P-S1-vIP"/>
+                            <constraint firstItem="R36-oF-cSY" firstAttribute="leading" secondItem="lOc-Wo-Ds8" secondAttribute="trailing" constant="8" id="jf2-cB-AP1"/>
+                            <constraint firstItem="lOc-Wo-Ds8" firstAttribute="leading" secondItem="7ts-On-kac" secondAttribute="trailing" constant="8" id="njg-fW-1aa"/>
+                            <constraint firstItem="7ts-On-kac" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="8" id="yGg-vT-T07"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnStart" destination="R36-oF-cSY" id="DOK-PN-iIj"/>
+                        <outlet property="tfImagePath" destination="lOc-Wo-Ds8" id="V74-NG-Hoa"/>
                         <outlet property="txtVOutput" destination="7x5-BS-k2v" id="hyI-Ja-QDE"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="-68" y="650"/>
         </scene>
     </scenes>
 </document>
