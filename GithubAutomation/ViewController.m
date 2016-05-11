@@ -122,36 +122,38 @@
 }
 
 - (void)checkIsUpdateAvailable {
-    NSURL *url = [NSURL URLWithString:@"https://github-automation.firebaseio.com/isUpdated.json"];
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSError *e = nil;
-    NSData *jsonData = [responseString dataUsingEncoding:NSUTF8StringEncoding];
-    NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:jsonData options: NSJSONReadingMutableContainers error: &e];
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        NSInteger numberOfUpdate = [self loadUserDefault];
-        if (numberOfUpdate != JSON.count) {
-            if(self.tfImagePath.stringValue.length > 3) {
-                [self writeOutput:@"Update available. Update images..."];
-                 BOOL isValid = [self updateImages];
-                if (isValid) {
-                    [self saveUserDefault:JSON.count];
-                } else {
-                    self.isRun = NO;
-                    self.btnStart.title = @"Start";
-                    NSAlert *alert = [[NSAlert alloc] init];
-                    [alert setAlertStyle:NSInformationalAlertStyle];
-                    [alert setMessageText:@"Invalid Path"];
-                    [alert setInformativeText:@"Input path to folder contains ios and windows folder"];
-                    [alert runModal];
-                    [self.tfImagePath selectText:self];
-                    [[self.tfImagePath currentEditor] setSelectedRange:NSMakeRange(0, [[self.tfImagePath stringValue] length])];
-                    return;
+    @autoreleasepool {
+        NSURL *url = [NSURL URLWithString:@"https://github-automation.firebaseio.com/isUpdated.json"];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSError *e = nil;
+        NSData *jsonData = [responseString dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:jsonData options: NSJSONReadingMutableContainers error: &e];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSInteger numberOfUpdate = [self loadUserDefault];
+            if (numberOfUpdate != JSON.count) {
+                if(self.tfImagePath.stringValue.length > 3) {
+                    [self writeOutput:@"Update available. Update images..."];
+                     BOOL isValid = [self updateImages];
+                    if (isValid) {
+                        [self saveUserDefault:JSON.count];
+                    } else {
+                        self.isRun = NO;
+                        self.btnStart.title = @"Start";
+                        NSAlert *alert = [[NSAlert alloc] init];
+                        [alert setAlertStyle:NSInformationalAlertStyle];
+                        [alert setMessageText:@"Invalid Path"];
+                        [alert setInformativeText:@"Input path to folder contains ios and windows folder"];
+                        [alert runModal];
+                        [self.tfImagePath selectText:self];
+                        [[self.tfImagePath currentEditor] setSelectedRange:NSMakeRange(0, [[self.tfImagePath stringValue] length])];
+                        return;
+                    }
+                    
                 }
-                
             }
-        }
-    });
+        });
+    }
 }
 
 - (void)saveUserDefault:(NSInteger) numberOfUpdate {
